@@ -10,7 +10,7 @@ function numeroAleatorio(q, d, a){
     let sufixo;
     for (let i = 0; i < parseInt(q); i++){
         sufixo = (i == q-1) ? ' ' : ' / ';
-        let aleatorio = (parseInt(Math.random() * a));
+        let aleatorio = (Math.floor(Math.random() * a));
 
         if (lista.length > a){
             lista = [];
